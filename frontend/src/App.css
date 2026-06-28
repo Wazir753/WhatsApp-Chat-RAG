@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #1a1a2e;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2d2d44;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.reset-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #dc2626;
+}
+
+.app-nav {
+  background-color: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #2d2d44;
+}
+
+.nav-btn {
+  background-color: transparent;
+  color: #a0a0b0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: #2d2d44;
+  color: #ffffff;
+}
+
+.nav-btn.active {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.chat-container {
+  display: flex;
+  gap: 1.5rem;
+  height: calc(100vh - 200px);
+}
+
+.embedding-progress-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.embedding-progress-content {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.embedding-progress-content h2 {
+  margin-bottom: 1.5rem;
+  color: #7c3aed;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 24px;
+  background-color: #2d2d44;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #7c3aed;
+  transition: width 0.3s ease;
+  border-radius: 12px;
+}
+
+.embedding-progress-content p {
+  color: #a0a0b0;
+  font-size: 1rem;
+}
