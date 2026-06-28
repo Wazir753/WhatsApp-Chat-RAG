@@ -1,0 +1,31 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#0a0a0a"/>
+  
+  <!-- Spider Bot Head -->
+  <circle cx="128" cy="128" r="60" fill="#e11d48"/>
+  <path d="M 128 68 A 60 60 0 0 0 68 128 L 128 128 Z" fill="#1d4ed8"/>
+  
+  <!-- White Eyes (Spider Shape) -->
+  <ellipse cx="108" cy="115" rx="18" ry="22" fill="white" transform="rotate(-15 108 115)"/>
+  <ellipse cx="148" cy="115" rx="18" ry="22" fill="white" transform="rotate(15 148 115)"/>
+  
+  <!-- Eye Pupils -->
+  <circle cx="108" cy="115" r="8" fill="#0a0a0a"/>
+  <circle cx="148" cy="115" r="8" fill="#0a0a0a"/>
+  
+  <!-- Web Lines on Sides -->
+  <path d="M 68 128 Q 40 100 30 70" stroke="#e11d48" stroke-width="3" fill="none"/>
+  <path d="M 68 128 Q 40 128 25 128" stroke="#e11d48" stroke-width="3" fill="none"/>
+  <path d="M 68 128 Q 40 156 30 186" stroke="#e11d48" stroke-width="3" fill="none"/>
+  
+  <path d="M 188 128 Q 216 100 226 70" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  <path d="M 188 128 Q 216 128 231 128" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  <path d="M 188 128 Q 216 156 226 186" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  
+  <!-- Small Web Pattern -->
+  <path d="M 68 128 L 188 128" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <path d="M 128 68 L 128 188" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <circle cx="128" cy="128" r="30" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.2"/>
+  <circle cx="128" cy="128" r="45" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.2"/>
+</svg>

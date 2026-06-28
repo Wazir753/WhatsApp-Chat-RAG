@@ -1,0 +1,166 @@
+.bot-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.settings-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e11d48;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.setting-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e11d48;
+}
+
+.setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.setting-group.toggle-group {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.setting-input {
+  background-color: #111111;
+  border: 1px solid #1d4ed8;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+}
+
+.setting-input:focus {
+  border-color: #e11d48;
+}
+
+.file-input {
+  background-color: #111111;
+  border: 1px solid #1d4ed8;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  color: #10b981;
+  margin-top: 0.25rem;
+}
+
+.toggle-switch {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  min-width: 80px;
+}
+
+.toggle-switch.on {
+  background-color: #10b981;
+}
+
+.toggle-switch:hover {
+  transform: scale(1.05);
+}
+
+.range-slider {
+  width: 100%;
+  accent-color: #e11d48;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #111111;
+  border-radius: 8px;
+  border-left: 3px solid #1d4ed8;
+}
+
+.status-label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.status-value {
+  font-size: 0.95rem;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.status-value.enabled {
+  color: #10b981;
+}
+
+.status-value.disabled {
+  color: #ef4444;
+}
+
+.save-btn {
+  background-color: #e11d48;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  align-self: flex-start;
+  box-shadow: 0 4px 6px rgba(225, 29, 72, 0.3);
+}
+
+.save-btn:hover:not(:disabled) {
+  background-color: #be123c;
+  transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
